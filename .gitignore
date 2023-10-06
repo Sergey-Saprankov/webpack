@@ -1,0 +1,58 @@
+# Исключаем директории и файлы, созданные npm и yarn
+/node_modules/
+/yarn-error.log
+/yarn.lock
+
+# Исключаем сгенерированные файлы сборки
+/dist/
+/.next/
+/.nuxt/
+
+# Исключаем временные и системные файлы
+/.DS_Store
+/.vscode/
+/.idea/
+/.cache/
+/.sourcemaps/
+/.sass-cache/
+/Thumbs.db
+
+# Исключаем логи и отчёты об ошибках
+/logs/
+/debug.log
+
+# Исключаем окружение и конфигурационные файлы
+/.env
+/.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Исключаем файлы конфигурации редакторов кода
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Исключаем временные файлы и папки
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids
+logs
+results
+.DS_Store
+.coverage
+.jest-cache
+node_modules
+.cache
+dist
+
