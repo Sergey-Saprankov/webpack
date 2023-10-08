@@ -17,6 +17,9 @@ export const buildPlugins = (options: IBuildOptions): webpack.WebpackPluginInsta
                 chunkFilename: 'css/[name].[contenhash:8].css'
             }
         ),
-        ...(isDev ? [new ReactRefreshWebpackPlugin()] : [new webpack.HotModuleReplacementPlugin()])
+        ...(isDev ? [new ReactRefreshWebpackPlugin()] : [new webpack.HotModuleReplacementPlugin()]),
+        new webpack.DefinePlugin({
+            __IS_DEV__: isDev
+        })
         ]
 }
